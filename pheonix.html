@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            สัตว์วิเศษ
+        </title>
+        <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+    </head>
+    <style>
+        body {
+            background-color: #111;
+            color: #FFF;
+            padding: 140px 0px 0px 0px;
+          }
+          
+          h1 {
+            background-color: rgba(256,256,256,.03);
+            background-image: -webkit-linear-gradient(top, #111, #0c0c0c);
+            background-image: -moz-linear-gradient(top, #111, #0c0c0c);
+            background-image: -ms-linear-gradient(top, #111, #0c0c0c);
+            background-image: -o-linear-gradient(top, #111, #0c0c0c);
+            font-size: 2em;
+            font-family: 'Amethysta', serif;
+            text-align: center;
+            line-height: 1.4em;
+            text-transform: uppercase;
+            letter-spacing: .3em;
+            white-space:nowrap;
+          }
+          
+          span {
+            color: #000;
+            font-family: 'Caesar Dressing', cursive;
+            font-size: 5em;
+            text-transform: lowercase;
+            vertical-align: middle;
+            letter-spacing: .2em;
+          }
+          .fire {
+            animation: animation 1s ease-in-out infinite alternate;
+            -moz-animation: animation 1s ease-in-out infinite alternate;
+            -webkit-animation: animation 1s ease-in-out infinite alternate;
+            -o-animation: animation 1s ease-in-out infinite alternate;
+          }
+          
+          .burn {
+            animation: animation .65s ease-in-out infinite alternate;
+            -moz-animation: animation .65s ease-in-out infinite alternate;
+            -webkit-animation: animation .65s ease-in-out infinite alternate;
+            -o-animation: animation .65s ease-in-out infinite alternate;
+          }
+          
+          @keyframes animation
+          {
+          0% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;}
+          100% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;}
+          }
+          
+          @-moz-keyframes animation
+          {
+          0% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;}
+          100% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;}
+          }
+          
+          @-webkit-keyframes animation
+          {
+          0% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;}
+          100% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;}
+          }
+          
+          @-o-keyframes animation
+          {
+          0% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #feec85,
+            -20px -20px 40px #ffae34,
+            20px -40px 50px #ec760c,
+            -20px -60px 60px #cd4606,
+            0 -80px 70px #973716,
+            10px -90px 80px #451b0e;}
+          100% {text-shadow: 0 0 20px #fefcc9,
+            10px -10px 30px #fefcc9,
+            -20px -20px 40px #feec85,
+            22px -42px 60px #ffae34,
+            -22px -58px 50px #ec760c,
+            0 -82px 80px #cd4606,
+            10px -90px 80px  #973716;}
+          }
+          :root {
+            --gray: #ededed;
+            --red: #e74c3c;
+          }
+          
+          * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+          
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+          
+          body {
+            font: 20px/30px sans-serif;
+          }
+          
+          h1 {
+            padding: 0 15px;
+            margin: 10vh 0;
+            line-height: normal;
+            text-align: center;
+          }
+          
+          .img-wrapper {
+            display: grid;
+            height: 100vh;
+          }
+          
+          .img-wrapper div {
+            grid-column: 1;
+            grid-row: 1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: var(--gray);
+            transition: opacity 0.1s;
+          }
+          
+          section:last-of-type {
+            max-width: 800px;
+            padding: 0 15px;
+            margin: 15vh auto;
+          }
+          
+          section:last-of-type p + p {
+            margin-top: 20px;
+          }
+        
+          .page-footer {
+            font-size: 16px;
+            line-height: normal;
+            text-align: center;
+            padding: 0 20px 10px;
+          }
+          
+          .page-footer span {
+            color: var(--red);
+          }
+          #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: rgb(169, 236, 216);
+            margin-top: 10px;
+            color: black;
+          }
+
+    </style>
+    <body bgcolor="black"> 
+        <center>
+            <span class="fire"><br>P</span>
+            <span class="burn">h</span>
+            <span class="fire">eo</span>
+            <span class="burn">n</span>
+            <span class="fire">ix</span>
+            <br><br><br><div id="cl" style="font-weight: 300;">Click here for more</div><br>
+            <div class="img-wrapper">
+            <div style="background-image: url(Pheonix1.jpg);"></div>
+            <div class="front" style="background-image: url(Pheonix2.jpg);"></div> 
+        </center> 
+        <p style="border-style: inset;">
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; phoenix, in ancient Egypt and in Classical antiquity, a fabulous bird associated with the worship of the sun. The Egyptian phoenix was said to be as large as an eagle, with brilliant scarlet and gold plumage and a melodious cry. Only one phoenix existed at any time, and it was very long-lived—no ancient authority gave it a life span of less than 500 years. As its end approached, the phoenix fashioned a nest of aromatic boughs and spices, set it on fire, and was consumed in the flames. From the pyre miraculously sprang a new phoenix, which, after embalming its father’s ashes in an egg of myrrh, flew with the ashes to Heliopolis (“City of the Sun”) in Egypt, where it deposited them on the altar in the temple of the Egyptian god of the sun, Re. A variant of the story made the dying phoenix fly to Heliopolis and immolate itself in the altar fire, from which the young phoenix then rose.<br><br>
+          
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Egyptians associated the phoenix with immortality, and that symbolism had a widespread appeal in late antiquity. The phoenix was compared to undying Rome, and it appears on the coinage of the late Roman Empire as a symbol of the Eternal City. It was also widely interpreted as an allegory of resurrection and life after death—ideas that also appealed to emergent Christianity.<br><br>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In Islamic mythology the phoenix was identified with the ʿanqāʾ (Persian: sīmorgh), a huge mysterious bird (probably a heron) that was originally created by God with all perfections but thereafter became a plague and was killed.
+        </p>
+        <center>
+          <p>
+            Information source 
+          </p>
+          <a href="https://www.britannica.com/topic/phoenix-mythological-bird" style="color: aqua;"><b>here!</b></a>
+        </center>
+        <button onclick="myFunction()" style="size: 10cm;">My personal information click here!</button>
+
+        <div id="myDIV">
+          My name is Tinnapat Sattaya i am 15 years old.I'm currently study in m.5 in Tupp shcool<br>
+          I really want to learn more about coding and really enjoy programming and coding, Also I'm especially interested in website
+        </div>
+        <script>
+          document.getElementById('cl').addEventListener('click', cl_Div);
+          function cl_Div() {
+          document.getElementById('cl').innerHTML = "<br><h2>Phoenix</h2><br>in ancient stories, an imaginary bird that set fire to itself every 500 years and was born again, rising from its ashes<br>";
+          }
+
+          const checkpoint = 300;
+
+          window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+             if (currentScroll <= checkpoint) {
+            opacity = 1 - currentScroll / checkpoint;
+          } else {ss
+          opacity = 0;
+          }
+          document.querySelector(".front").style.opacity = opacity;
+          });
+
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+        </script>
+    </body>
+</html>
